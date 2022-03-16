@@ -4,7 +4,7 @@
             [compojure.route :as route]
             [clojure.java.io :as io]
             [ring.adapter.jetty :as jetty]
-            #_ [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
+            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [environ.core :refer [env]]
             [cheshire.core :as json]))
 
@@ -15,9 +15,12 @@
   })
   (route/not-found "Not Found"))
 
-#_ (def app
+; (println (site-defaults))
+(println wrap-defaults)
+
+(def app
   (wrap-defaults app-routes site-defaults))
 
-(defn -main [& [port]]
+#_ (defn -main [& [port]]
   (let [port (Integer. (or port (env :port) 5000))]
     (jetty/run-jetty (site #'app-routes) {:port port :join? false})))
