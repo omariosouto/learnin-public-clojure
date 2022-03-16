@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/pokebank-api-standalone.jar clojure.main -m pokebank-api.web
+web: java $JVM_OPTS -cp target/clojure-getting-started-standalone.jar clojure.main -m clojure-getting-started.web
