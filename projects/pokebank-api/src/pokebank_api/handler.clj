@@ -23,6 +23,9 @@
 (defn -main [port]
   (jetty/run-jetty app-routes                 {:port (Integer. (or port (env :port) 5000))}))
 
+(defn -dev-main [port]
+  (jetty/run-jetty app-routes                 {:port (Integer. (or port (env :port) 5000))}))
+
 ; using the greet handler as a var here
 ; this way wrap-reload, when it refreshes the namespaces,
 ; will affect the value of greet
