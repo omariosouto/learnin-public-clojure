@@ -16,7 +16,7 @@
   (route/not-found "Not Found"))
 
 ; (println (site-defaults))
-(println wrap-defaults)
+(println "Okay okay, chegou até aqui!")
 
 (def app
   (wrap-defaults app-routes site-defaults))
