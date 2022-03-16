@@ -1,5 +1,5 @@
-# gh-profile-display (GitHub Profile Display CLI)
-> A CLI project that get profile info from GitHub API
+# PokeBank API
+> A small backend project to test my clojure skills.
 
 ## Setup & Run 🚀
 > Ensure that you have everything installed as [described here](../../_docs/installation.md).
@@ -7,10 +7,10 @@
 ```sh
 lein install
 ```
-### Dev mode
 
+### Dev Mode
 ```sh
-lein run
+lein ring server
 ```
 
 ## Running Tests 🧪

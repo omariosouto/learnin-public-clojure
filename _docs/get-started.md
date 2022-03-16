@@ -18,13 +18,13 @@ lein repl
 ```sh
 lein new app <name>
 ```
-> That's how I create `./projects/github-profile-display`
+> That's how I create `./projects/github-profile-display-cli`
 
 ## How to create a Back End project?
 ```
 lein new compojure <name>
 ```
-> That's how I create `./projects/pokebank`
+> That's how I create `./projects/pokebank-api`
 
 ## How to create a Front End project (ClojureScript + Reframe [React] and shadow-cljs)?
 ```

@@ -1,4 +1,4 @@
-# github-profile-display
+# github-profile-display-cli
 
 FIXME: description
 
@@ -10,7 +10,7 @@ Download from http://example.com/FIXME.
 
 FIXME: explanation
 
-    $ java -jar github-profile-display-0.1.0-standalone.jar [args]
+    $ java -jar github-profile-display-cli-0.1.0-standalone.jar [args]
 
 ## Options
 

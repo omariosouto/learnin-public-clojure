@@ -1,7 +1,7 @@
-(ns pokebank.handler-test
+(ns pokebank-api.handler-test
   (:require [clojure.test :refer :all]
             [ring.mock.request :as mock]
-            [pokebank.handler :refer :all]))
+            [pokebank-api.handler :refer :all]))
 
 (deftest test-app
   (testing "main route"
