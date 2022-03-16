@@ -3,6 +3,7 @@
             [compojure.route :as route]
             [cheshire.core :as json]
             [environ.core :refer [env]]
+            [ring.adapter.jetty :as jetty]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
 
 (defroutes app-routes
