@@ -15,6 +15,7 @@
 
 # Content
 - [Get started](./_docs/get-started.md)
+- [How to basics?](./_docs/how-to-basics.md)
 - [Editor Tips](./_docs/editor-tips.md)
 - B̶a̶c̶k̶ E̶n̶d̶
 - F̶r̶o̶n̶t̶ E̶n̶d̶
