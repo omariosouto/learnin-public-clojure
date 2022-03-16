@@ -15,7 +15,20 @@ lein repl
 > Parenthesis declares that you are using a function. In this case "+" is a add function.
 
 ## How to create a CLI project?
-```clj
+```sh
 lein new app <name>
 ```
-> Thats how I create `./projects/github-profile-display`
+> That's how I create `./projects/github-profile-display`
+
+## How to create a Back End project?
+```
+lein new compojure <name>
+```
+> That's how I create `./projects/pokebank`
+
+## How to create a Front End project (ClojureScript + Reframe [React] and shadow-cljs)?
+```
+lein new reagent <name> +test
+```
+> That's how I create `./projects/pokebank-ui`
+> You can check other ways to start a project here: https://github.com/reagent-project/reagent-template

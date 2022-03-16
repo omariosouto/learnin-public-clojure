@@ -5,7 +5,8 @@
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/open-source-boilerplate/blob/master/LICENSE.md)
 
 # Projects
-- [Github Profile Display]()
+- [CLI: Github Profile Display](./projects/github-profile-display)
+- [API: PokeBank (CRUD + Stateless Login](./projects/github-profile-display)
 
 # Content
 - [Get started](./_docs/get-started.md)

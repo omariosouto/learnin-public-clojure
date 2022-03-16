@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/pokebank-ui.jar clojure.main -m pokebank-ui.server

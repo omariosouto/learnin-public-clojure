@@ -1,6 +1,7 @@
 (ns github-profile-display.core
   (:gen-class))
 
+(def )
 
 ; global "variable" declaration
 (def profile-username "omariosouto")

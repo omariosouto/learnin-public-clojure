@@ -1,0 +1,8 @@
+{:lein         {:profile "+shadow-cljs"}
+ :builds       {:app {:target     :browser
+                      :output-dir "resources/public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [pokebank-ui.core]}}
+                      :devtools   {:after-load pokebank-ui.core/mount-root}}}
+ :dev-http     {3000 {:root    "resources/public"
+                      :handler pokebank-ui.handler/app}}}
