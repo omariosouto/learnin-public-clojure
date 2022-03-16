@@ -14,7 +14,7 @@
             [environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
   :ring {:handler pokebank-api.handler/app}
-  :uberjar-name "clojure-getting-started-standalone.jar"
+  :uberjar-name "pokebank_api-standalone.jar"
   :profiles
   {:dev {:production {:env {:production true}}
          :dependencies [[javax.servlet/servlet-api "2.5"]
