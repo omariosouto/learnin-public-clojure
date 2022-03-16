@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "shadow-cljs watch app"
+  },
   "devDependencies": {
     "shadow-cljs": "^2.16.5"
   },
