@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [compojure "1.6.1"]
                  [cheshire "5.8.1"]
+                 [ring "1.2.1"]
                  [ring/ring-defaults "0.3.2"]
                  [environ "1.1.0"]
                  [ring/ring-jetty-adapter "1.7.1"]]
@@ -15,7 +16,6 @@
   :hooks [environ.leiningen.hooks]
   :ring {:handler pokebank-api.handler/app}
   :uberjar-name "pokebank_api-standalone.jar"
-  :profiles
-  {:dev {:production {:env {:production true}}
-         :dependencies [[javax.servlet/servlet-api "2.5"]
-                        [ring/ring-mock "0.3.2"]]}})
+  :main pokebank-api.handler
+  :profiles {:dev
+             {:main pokebank-api.handler/-dev-main}})

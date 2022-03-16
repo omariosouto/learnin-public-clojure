@@ -34,6 +34,9 @@ git subtree push --prefix projects/pokebank-api heroku master
 ## Extras 💡
 > Here you can check any extra info related to this project
 
+### References
+- [Minimal Example deplyoing backend to heroku](https://gist.github.com/yosemitebandit/8d12355c51d833fd714a)
+
 ### What technologies are used?
 - [React](https://reactjs.org/)
 - [Reagent](https://github.com/reagent-project/reagent)
