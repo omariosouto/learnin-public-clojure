@@ -14,8 +14,9 @@
   :plugins [[lein-ring "0.12.5"]
             [environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
-  :ring {:handler pokebank-api.handler/app}
+  :ring {:handler pokebank-api.handler/-dev-main}
   :uberjar-name "pokebank_api-standalone.jar"
   :main pokebank-api.handler
   :profiles {:dev
-             {:main pokebank-api.handler/-dev-main}})
+             {:main pokebank-api.handler/-dev-main}}
+  :repl-options {:init-ns pokebank-api.handler})
