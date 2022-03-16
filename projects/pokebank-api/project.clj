@@ -10,5 +10,6 @@
   :ring {:handler pokebank-api.handler/app}
   :run {:main pokebank-api.main/app}
   :profiles
+  {:profiles {:uberjar {:aot :all}}}
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.2"]]}})
