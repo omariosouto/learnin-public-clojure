@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/pokebank_api-standalone.jar clojure.main -m pokebank_api.handler
+web: java $JVM_OPTS -cp target/pokebank_api-standalone.jar clojure.main -m pokebank-api.handler
