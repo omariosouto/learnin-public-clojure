@@ -8,6 +8,8 @@
 lein install
 ```
 
+git subtree push --prefix path/to/subdirectory heroku master
+
 ### Dev Mode
 ```sh
 lein ring server
@@ -24,8 +26,14 @@ lein test
 lein lint
 ```
 
+## Deploy to Heroku
+```sh
+git subtree push --prefix projects/pokebank-api heroku master
+```
+
 ## Extras 💡
 > Here you can check any extra info related to this project
+
 ### What technologies are used?
 - [React](https://reactjs.org/)
 - [Reagent](https://github.com/reagent-project/reagent)
