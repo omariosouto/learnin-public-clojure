@@ -7,11 +7,6 @@
 <center>
 <img src="https://user-images.githubusercontent.com/13791385/158704142-2a8f64b5-a5be-4644-8d96-c90305ca62c3.png" width="140" />
 </center>
-    
-# Projects
-- [CLI: Github Profile Display](./projects/github-profile-display-cli)
-- [API: PokeBank (CRUD + Stateless Login)](./projects/pokebank-api/)
-- [UI: PokeBank (Reagent [React] + shadow-cljs)](./projects/github-profile-display)
 
 # Content
 - [Get started](./_docs/get-started.md)
@@ -19,6 +14,12 @@
 - [Editor Tips](./_docs/editor-tips.md)
 - B̶a̶c̶k̶ E̶n̶d̶
 - F̶r̶o̶n̶t̶ E̶n̶d̶
+
+    
+# Projects
+- [CLI: Github Profile Display](./projects/github-profile-display-cli)
+- [API: PokeBank (CRUD + Stateless Login)](./projects/pokebank-api/)
+- [UI: PokeBank (Reagent [React] + shadow-cljs)](./projects/github-profile-display)
 
 ## How to install?
 - Java
