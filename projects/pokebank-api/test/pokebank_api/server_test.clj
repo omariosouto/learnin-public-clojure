@@ -1,6 +1,6 @@
-(ns pokebank-api.core-test
+(ns pokebank-api.server-test
   (:require [clojure.test :refer :all]
-            [pokebank-api.core :refer :all]))
+            [pokebank-api.server :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
