@@ -8,8 +8,9 @@
 
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [compojure "1.1.6"]
-                 [ring/ring-core "1.9.5"]
                  [ring "1.9.5"]
+                 [ring/ring-jetty-adapter "1.9.5"]
+                 [ring/ring-core "1.9.5"]
                  [cheshire "5.8.1"]
                  [environ "1.1.0"]]
   :repl-options {:init-ns pokebank-api.server}
@@ -19,4 +20,4 @@
   :profiles {:dev
              {:main pokebank-api.server/-dev-main}}
   ; Tasks
-  :ring {:handler pokebank-api.server/-main})
+  :ring {:handler pokebank-api.server/-dev-main})

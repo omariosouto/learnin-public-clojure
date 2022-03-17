@@ -3,16 +3,12 @@
             [ring.middleware.reload :refer [wrap-reload]]
             [compojure.core :refer [defroutes GET]]
             [ring.handler.dump :refer [handle-dump]]
-            [compojure.route :as route]
-            [environ.core :refer [env]]
-            [cheshire.core :as json]))
+            [compojure.route :as route]))
 
 ; [Service] ============
 (defn greet [req]
   {:status 200
-   :body "hi there"})
-
-(println (greet "req"))
+   :body "hi there im here oloco!"})
 
 (defroutes server-routes
            (GET "/" [] greet)
@@ -20,11 +16,14 @@
            (route/not-found "not found"))
 ; ======================
 
+(def dev-port 8080)
+
 ; Definition of file
-(defn -main [port]
+(defn -main [config]
   (jetty/run-jetty server-routes
-                   {:port (int port)}))
-(defn -dev-main [port]
+                   {:port dev-port}))
+(defn -dev-main [config]
+  (println (str config "manooo"))
   (jetty/run-jetty (wrap-reload #'server-routes)
-                   {:port (int port)}))
+                   {:port dev-port}))
 
